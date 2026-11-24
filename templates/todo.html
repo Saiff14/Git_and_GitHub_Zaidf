@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do Form</title>
+</head>
+<body>
+    <h1>To-Do Item</h1>
+    {% if error %}<p style="color:red">{{ error }}</p>{% endif %}
+    {% if success %}<p style="color:green">{{ success }}</p>{% endif %}
+    <form action="/submittodoitem" method="POST">
+        <label for="itemName">Item Name</label>
+        <input id="itemName" name="itemName" type="text" required>
+        <br><br>
+        <label for="itemDescription">Item Description</label>
+        <textarea id="itemDescription" name="itemDescription" required></textarea>
+        <br><br>
+        <button type="submit">Submit Item</button>
+    </form>
+    {% if item %}
+    <h2>Submitted Item</h2>
+    <p>Item ID: {{ item.item_id }}</p>
+    <p>Item UUID: {{ item.item_uuid }}</p>
+    <p>Item Hash: {{ item.item_hash }}</p>
+    {% endif %}
+</body>
+</html>
