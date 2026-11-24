@@ -1,9 +1,9 @@
-[
+﻿[
   {
     "id": 1,
     "name": "Zaid",
     "course": "DevOps",
-    "technology": "Flask"
+    "technology": "Flask and Git"
   },
   {
     "id": 2,
