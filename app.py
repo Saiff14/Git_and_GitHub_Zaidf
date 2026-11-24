@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, request
+﻿from flask import Flask, jsonify, render_template, request
 from pymongo import MongoClient
 import os
 import json
@@ -30,6 +30,9 @@ def api():
 
 
 @app.route("/submittodoitem", methods=["POST"])
+@app.route("/submit", methods=["POST"])
+def submit_alias():
+    return submittodoitem()
 def submittodoitem():
     item_name = request.form.get("itemName", "").strip()
     item_description = request.form.get("itemDescription", "").strip()
