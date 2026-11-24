@@ -19,3 +19,6 @@ The `/api` route serves `data.json`. The `/submittodoitem` POST route validates 
 ## Task 1 username branch
 Branch owner: Zaid Fodkar (ZaidFodkar).
 
+## Rebase verification
+Task 4 is rebased onto main without squashing.
+
