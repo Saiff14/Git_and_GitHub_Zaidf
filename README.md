@@ -1,4 +1,4 @@
-# Git and GitHub Assignment
+﻿# Git and GitHub Assignment
 
 Author: Zaid Fodkar
 
@@ -15,3 +15,7 @@ Repository: https://github.com/Saiff14/Git_and_GitHub_Zaidf
 5. Open `http://127.0.0.1:5000/`.
 
 The `/api` route serves `data.json`. The `/submittodoitem` POST route validates and submits an item, and generates an item ID, UUID, and hash.
+
+## Task 1 username branch
+Branch owner: Zaid Fodkar (ZaidFodkar).
+
